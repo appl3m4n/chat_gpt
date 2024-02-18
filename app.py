@@ -10,7 +10,7 @@ str3 = 'JVnBzt79unM'
 app = Flask (__name__)
 @app.route ('/')
 def index ():
-    return render_template('templates/index.html')
+    return render_template('index2.html')
 
 @app.route('/', methods=['POST'])
 def getvalue():
@@ -26,7 +26,7 @@ def getvalue():
     y = [completion.choices[0].message.content]
     print(name)
     print(y)
-    return render_template ('templates/index.html', n=name, age=age,db=db, xx=y)
+    return render_template ('index2.html', n=name, age=age,db=db, xx=y)
 
 if __name__ == '__main__':
     app.run (debug=True)
