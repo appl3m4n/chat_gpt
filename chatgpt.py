@@ -16,9 +16,9 @@ y = [completion.choices[0].message.content]
 
 html_content = f"<html> <head> </head> {y} <body> </body> </html>"
 
-with open("index_gpt.html", "w") as html_file:
+with open("index.html", "w") as html_file:
     html_file.write(html_content)
     print("Html file created successfully !!")
 
 time.sleep (2)
-webbrowser.open_new_tab("index_gpt.html")
+webbrowser.open_new_tab("index.html")
