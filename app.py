@@ -11,7 +11,7 @@ def getvalue():
     age = request.form['age']
     db = request.form ['dateofbirth']
     print(name)
-    return render_template ('pass.html', n=name, age=age, db=db)
+    return render_template ('index.html', n=name, age=age, db=db)
 
 if __name__ == '__main__':
     app.run (debug=True)
