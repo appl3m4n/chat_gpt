@@ -3,6 +3,7 @@ import webbrowser
 import time
 import openai
 
+
 str1 = 'sk-6DurzFcba69Gqq8KkZeAT3B'
 str2 = 'lbkFJYWeBEwHHM'
 str3 = 'JVnBzt79unM'
